@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "scripts": {
+    "openapi-generator": "openapi-generator"
+
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
