@@ -1,0 +1,28 @@
+openapi: 3.0.0
+servers:
+  - url: 'http://foo.bar.com'
+info:
+  description: 
+  version: 1.0.0
+  title: Foo Bar
+paths:
+  /users/send-password-reminder:
+    post:
+      summary: Add a new user to the database
+      description: ''
+      responses:
+        '200':
+          description: Success
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/User'
+
+components:
+  schemas:
+    User:
+      type: object
+      properties:
+        email:
+          type: string
